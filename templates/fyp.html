@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="Tehrim" content="" />
+    <title>CurrencyMark Alpha(TOM)</title>
+    <!-- Favicon-->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{url_for('static',filename='assets/favicon.ico')}}"
+    />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Simple line icons-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{url_for('static',filename='img.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='pak.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='about.css')}}" />
+
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link
+      href="{{url_for('static',filename='css/styles.css')}}"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{url_for('static',filename='style2.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+    <link rel="stylesheet" href="../static/css/img.css" />
+
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awsome/4.7.0/css/font-awsome.min.css">
+    
+      </head>
+  <!-- <body id="page-top"> -->
+    
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+        <li class="sidebar-nav-item"><a href="#about">About Us</a></li>
+        <li class="sidebar-nav-item"><a href="#services">Achievements</a></li>
+        <li class="sidebar-nav-item">
+          <a href="#Currency-Detector">Currency Detector</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#pakistan">Currency Detector for Pakistan</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#converter">Currency converter</a>
+        </li>
+        <li class="sidebar-nav-item"><a href="#footer">Footer</a></li>
+      </ul>
+    </nav>
+
+ 
+<!--carousal-->
+
+ <div class="carousal">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 0"></button>
+      </div> 
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+                <img src="{{url_for('static',filename='capture.JPG')}}"  height="100%" class="d-block w-100" alt="...">
+                               <div class="carousel-caption d-none d-md-block">
+                  </div>
+      </div>
+      <div class="carousel-item">
+          <img src="{{url_for('static',filename='cue.JPG')}}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+              </div>
+      </div>
+      <div class="carousel-item">
+              <img src="{{url_for('static',filename='yo.JPG')}}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              </div>
+      </div>
+      <div class="carousel-item">
+                <img src="{{url_for('static',filename='iu.JPG')}}" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+            </div>
+             </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- About us -->
+
+    <div class="about-main" id="about">
+      <h1 class="team-v">Here is our hardworking Team, supervised by Miss Samra Siddiqui!</h1>
+      <div class="about-us">
+        <div class="about-card">
+          <div class="img-card"></div>
+          <h3>Tehrim Zafar</h3>
+          <p>Front-End Developer & Documenter</p>
+        </div>
+        <div class="about-card">
+          <div class="img-card male"></div>
+          <h3>Mudassar Siddiqui</h3>
+          <p>Android app developer</p>
+        </div>
+        <div class="about-card">
+          <div class="img-card male"></div>
+          <h3>Umer Zaman Khan</h3>
+          <p>Backend Programmer</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Services-->
+
+    <section
+      class="content-section ico-4 bg-primary text-white text-center"
+      id="services"
+    >
+      <div class="container cont_ico service-info px-4 px-lg-5">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0"></h3>
+          <h2 class="mb-5 or our">Our Achievement</h2>
+        </div>
+        <div class="row inter_ii gx-4 gx-lg-5">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <a
+                href=" https://www.analyticsvidhya.com/blog/2021/06/image-processing-using-cnn-a-beginners-guide/#:~:text=error%20is%3A%203.41%25-,In%20the%20model%20results%2C%20it%20is%20visible%20as%20the%20number,the%20accuracy%20of%20the%20model.&text=The%20media%20shown%20in%20this,used%20at%20the%20Author's%20discretion"
+                target="_blank"
+              >
+                <i class="icon-screen-smartphone"></i></a
+            ></span>
+            <h4><strong>Accuracy</strong></h4>
+            <p class="text-faded mb-0">We get 90.04% accuracy!</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <a
+                href="https://www.researchgate.net/figure/Training-loss-and-validation-loss-of-the-neural-network-versus-the-number-of-epochs-for_fig4_333707014"
+                target="_blank"
+              >
+                <i class="icon-pencil"></i></a
+            ></span>
+            <h4><strong>Validation loss</strong></h4>
+            <p class="text-faded mb-0">There is only 0.1% validation loss</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <a
+                href=" https://www.researchgate.net/figure/Training-loss-and-validation-loss-of-the-neural-network-versus-the-number-of-epochs-for_fig4_333707014"
+                target="_blank"
+              >
+                <i class="icon-pencil"></i></a
+            ></span>
+            <h4><strong>Training loss</strong></h4>
+            <p class="text-faded mb-0">There is only 0.1% training loss</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdsHtVj6ZrbKxHe_gAvkADXO9YT426Fo8CxXS32SPdEZJ0V_Q/viewform"
+                target="_blank"
+              >
+                <i class="icon-like"></i></a
+            ></span>
+            <h4><strong>Favorited</strong></h4>
+            <p class="text-faded mb-0">
+              You can like
+              <i class="fas fa-heart"></i>
+              our website!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- international  currency detector-->
+    <form action="/international" method='post' enctype="multipart/form-data">
+    <div class="cont" id="Currency-Detector">
+      <div class="dec">
+        <h2 class="slide" data="International~Currency~Detector">International~Currency~Detector.....</h2>
+        <button class="ico-buttn">
+          <div class="buttn-txt">Add Photo</div>
+          <input
+            class="bp"
+            type="file"
+            id="img-input"
+            accept="image/jpeg, image/png, image/jpg"
+            name = 'image'
+          />
+          <div class="add-ico"></div>
+        </button>
+        <div id="display-image" class="dist"></div>
+
+        
+        <input type='submit' class='btn btn-primary' />
+      </form>
+
+      <br>
+      <br>
+      <hr>
+      {% if inter == 0 %}
+      <p id='results'>Ghana Currency</p>
+      
+	    {% endif %}
+      {% if inter == 1 %}
+      <p id='results'>Ghana Currency</p>
+
+      {% endif %}
+      {% if inter == 2 %}
+      <p id='results'>Ghana Currency</p>
+      
+      {% endif %}
+      {% if inter == 3 %}
+      <p id='results'>Ghana Currency</p>
+
+      {% endif %}
+      {% if inter == 4 %}
+      <p id='results'>Indian Currency</p>
+
+	    {% endif %}
+      {% if inter == 5 %}
+      <p id='results'>Indian Currency</p>
+      
+
+	    {% endif %}
+      {% if inter == 6 %}
+      <p id='results'>Indian Currency</p>
+
+      {% endif %}
+      {% if inter == 7 %}
+      <p id='results'>Thai Currency</p>
+
+      {% endif %}
+      {% if inter == 8 %}
+      <p id='results'>Thai Currency</p>
+      
+
+	    {% endif %}
+             </div>
+    </div>
+
+    <!--pakistan detector-->
+    <form action="/pakistan" method='post' enctype="multipart/form-data">
+    <div class="cont-second" id="pakistan">
+      <div class="dec">
+        <h1 class="slide-2" data="Currency~Detector~For~Pakistan">Currency~Detector~For~Pakistan</h1>
+             <button class="ico-buttn-second">
+          <div class="buttn-txt">Add Photo</div>
+          <input
+            class="bp"
+            type="file"
+            id="img-input-pak"
+            accept="image/jpeg, image/png, image/jpg"
+            name = 'image'
+          />
+          <div class="add-ico"></div>
+        </button>
+        <div id="display-image-pak" class="dist-pak"></div>
+      
+      <input type='submit' class='btn btn-primary' />
+      </form>
+      <br>
+      <br>
+      <hr>
+      {% if pak == 0 %}
+      <p id='results'>RS 1000</p>
+      
+
+	    {% endif %}
+      {% if pak == 1 %}
+      <p id='results'>Rs 100</p>
+      
+
+	    {% endif %}
+      {% if pak == 2 %}
+      <p id='results'>Rs 10</p>
+      
+
+	    {% endif %}
+      {% if pak == 3 %}
+      <p id='results'>Rs 20</p>
+      
+
+	    {% endif %}
+      {% if pak == 4 %}
+      <p id='results'>Rs 5000</p>
+      
+
+	    {% endif %}
+      {% if pak == 5 %}
+      <p id='results'>Rs 500</p>
+      
+
+	    {% endif %}
+      {% if pak == 6 %}
+      <p id='results'>Rs 50</p>
+
+
+      {% endif %}
+      {% if pak == 7 %}
+      <p id='results'>No Currency Detected</p>
+      
+
+	    {% endif %}
+       <!-- Currency Detector Modal Starts Here -->
+       <!-- <div
+         class="modal fade"
+         id="CurrencyDetectorModal"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+       >
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">
+                 Your Output is here
+               </h5>
+               <button
+                 type="button"
+                 class="btn-close"
+                 data-bs-dismiss="modal"
+                 aria-label="Close"
+               ></button>
+             </div>
+             <div class="modal-body">300$</div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                 Close </button>
+              </div>--
+           </div>
+         </div>
+       </div>-->
+         </div>
+   </div> 
+    <script src="../Pakistan Module/pak.js"></script>
+
+    
+
+    <!--converter-->
+    <div class="cover" id="converter">
+      <div class="wrapper">
+        <header><b>Currency Converter</b></header>
+        <form class="for" action="#">
+          <div class="amount">
+            <p>Enter Amount</p>
+            <input class="val" type="text" value="1" />
+          </div>
+          <div class="drop-list1">
+            <div class="from">
+              <p>From</p>
+              <div class="select-box1">
+                <img src="https://flagcdn.com/48x36/us.png" alt="flag" />
+                <select>
+                  <!-- Options tag are inserted from JavaScript -->
+                </select>
+              </div>
+            </div>
+            <div class="icon1"><i class="fas fa-exchange-alt"></i></div>
+            <div class="to">
+              <p>To</p>
+              <div class="select-box1">
+                <img src="https://flagcdn.com/48x36/np.png" alt="flag" />
+                <select>
+                  <!-- Options tag are inserted from JavaScript -->
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="exchange-rate">Getting exchange rate...</div>
+          <button class="ratss">Get Exchange Rate</button>
+        </form>
+      </div>
+         </div>
+  
+    <!-- Footer-->
+   <footer class="footer text-center" id="footer">
+      <div class="container px-4 px-lg-5">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a
+              class="social-link rounded-circle text-white mr-3"
+              href="https://web.facebook.com/settings?tab=account&section=username"
+              target="_blank"
+            >
+              <i class="icon-social-facebook"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              class="social-link rounded-circle text-white mr-3"
+              href="https://twitter.com/Tehriiim12?s=09"
+              target="_blank"
+            >
+              <i class="icon-social-twitter"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              class="social-link rounded-circle text-white"
+              href="https://github.com/tehrim-786"
+              target="_blank"
+              ><i class="icon-social-github"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">
+          Copyright &copy; CurrencyMark Alpha 2022
+        </p>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <!-- <a class="scroll-to-top rounded" href="#page-top"
+      ><i class="fas fa-angle-up"></i
+    ></a> -->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{{url_for('static',filename='js/img.js')}}"></script>
+    <script src="{{url_for('static',filename='js/scripts.js')}}"></script>
+    <script src="{{url_for('static',filename='js/country-list.js')}}"></script>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+    <script src="{{url_for('static',filename='js/pak.js')}}"></script>
+    <script src="{{url_for('static',filename='js/text_to_speech.js')}}"></script>
+  
+  
+  <!-- chatbot -->
+    <script type="text/javascript">
+      (function(d, m){
+          var kommunicateSettings = 
+              {"appId":"2208f4c1006e5cea3f4a65e651ff86f4","popupWidget":true,"automaticChatOpenOnNavigation":true};
+          var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+          s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+          var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+          window.kommunicate = m; m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+  </script>
+
+
+
+
+  <!-- <div class="chat-bar-collapsible">
+    <button class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content">
+        <div class="full-chat-block">
+            <!-- Message Container -
+            <div class="outer-container">
+                <div class="chat-container">
+                    <!-- Messages -
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+
+                    <!-- User input box -
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                            <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                onclick="heartButton()"></i>
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+ -->
+</body>
+
+</html>

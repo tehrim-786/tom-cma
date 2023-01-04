@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about-main {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.about-main > h1 {
+  padding-top: 50px;
+  font-size: 140%;
+}
+.about-us {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+.about-card {
+  height: 360px;
+  width: 20vw;
+  border: 1px solid rgba(168, 168, 168, 0.75);
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: -6px 3px 46px -6px rgba(0, 0, 0, 0.466);
+  text-align: center;
+}
+.img-card {
+  height: 250px;
+  width: 100%;
+  background-image: url(girl-icon-flat-single-avatarpeaople-icon-from-vector-14449811.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.male {
+  background-image: url(boy-icon-flat-single-avatarpeaople-icon-from-vector-14449800.jpg);
+}
+@media screen and (max-width: 900px) {
+  .about-us {
+    flex-direction: column;
+    height: fit-content;
+    gap: 3vw;
+  }
+  .img-card {
+    height: 200px;
+  }
+  .about-card {
+    height: 330px;
+    width: 200px;
+    margin-top: 50px;
+  }
+  .about-main {
+    height: fit-content;
+    width: 90vw;
+  }
+}
+.about-card > h3 , p{
+  font-size: 100%;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1130px) {
+  .about-us {
+    gap: 5vw;
+  }}
+@media screen and (max-width: 550px) {
+  .about-card{
+    height: 330px;
+  width: 35vw;
+  }
+  .about-card > h3{
+    font-size: 100%;
+  }
+  .about-card > p{
+
+    font-size: 85%;
+  }
+  
+}
+@media screen and (max-width:771px) {
+  .about-main > h1{
+    font-size: 90%;
+    width: 90% !important;
+  }
+  .about-main{
+    width: 98vw;
+  }
+  
+}

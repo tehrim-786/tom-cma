@@ -1,0 +1,172 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.cover {
+  /* height: 100vh;
+  width: 100vw; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+
+  background-image: url("nice.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  /* background-size: 1820px 830px !important; */
+}
+
+::selection {
+  color: #fff;
+  background: #201c52;
+}
+.wrapper {
+  width: 370px;
+  padding: 30px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  background: white;
+  box-shadow: 15px 15px 30px #bebebe92, -15px -15px 30px #ffffff93;
+}
+.wrapper header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+.for :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+.for p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.val {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+.val :focus {
+  padding: 0 14px;
+  border: 2px solid #675afe;
+}
+.for .drop-list1 {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list1 .select-box1 {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
+}
+.select-box1 img {
+  max-width: 21px;
+}
+.select-box1 select {
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+}
+.select-box1 select::-webkit-scrollbar {
+  width: 8px;
+}
+.select-box1 select::-webkit-scrollbar-track {
+  background: #fff;
+}
+.select-box1 select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.drop-list1 .icon1 {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+}
+.exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+/* ====================================== Button =========================================== */
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #ffa500;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: rgb(0, 0, 106);
+}
+
+.for button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #ffa500;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.for button:hover::before {
+  width: 105%;
+}
+
+.for button:hover {
+  color: #fff;
+}
+
+/* ========================================================================= */
+
+.member-info > span {
+  color: gray;
+}
+.member-info > h4 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+.shed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shed h2 {
+  font-size: 1.5rem;
+}
+.service-icon {
+  box-shadow: 5px 5px 20px #00aaff8a;
+}
+.Or {
+  text-shadow: 2px 2px 5px #1363df;
+}

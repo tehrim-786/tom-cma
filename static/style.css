@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cont {
+  height: 800px;
+  width: 100vw;
+  background-image: url(Picsart.jpg);
+  display: flex;
+  background-size: 100% 100%;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 2.5%; 
+}
+.dec {
+  height: 28em;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 80px !important;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: #040704;
+}
+.dec h1 {
+  position: relative;
+  color: rgb(5, 44, 21);
+}
+
+.dec h1::before {
+  content: attr(data);
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 3px double #0e185f;
+  color: #0e185f;
+  animation: slide 5s linear infinite;
+  overflow: hidden;
+}
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+#display-image {
+  height: 38vh;
+  width: 50vw;
+  margin-top: 50px;
+  background-position: center;
+  border-radius: 5px;
+  background-size: 100% 100%;
+  border: solid 1px yellow;
+  box-shadow: inset 2px 2px 50px rgba(252, 247, 103, 0.856),
+    2px 2px 50px rgba(252, 247, 103, 0.856);
+}
+.icon-butn input {
+  opacity: 0;
+}
+
+/* ================================ Add Image ================================== */
+.icon-butn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.add-butn:hover {
+  width: 120px;
+  box-shadow: 0px 0px 50px 5px #fac213;
+  cursor: pointer;
+}
+
+.add-butn::before,
+.add-butn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: rgb(42, 97, 66);
+}
+
+.add-butn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-butn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.icon-butn:focus {
+  outline: none;
+}
+
+.butn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+  position: relative;
+  top: 10px;
+}
+
+.add-butn:hover::before,
+.add-butn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+
+.add-butn:hover .butn-txt {
+  opacity: 1;
+}
+
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: seagreen;
+  overflow: hidden;
+}
+
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-butn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+.add-butn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}

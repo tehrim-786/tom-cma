@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cont {
+  height: 100vh !important;
+  width: 100vw !important;
+  background-image: url(../Picsart.jpg) !important;
+  display: flex !important;
+  background-size: cover !important;
+  align-items: center !important;
+  font-family: "Courier New" !important;
+}
+.dec {
+  height: 28em !important;
+  width: fit-content !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  position: relative !important;
+  left: 80px !important;
+  font-size: 1.3em !important;
+  text-transform: uppercase !important;
+  color: #001d6e !important;
+}
+.dec h1 {
+  position: relative !important;
+  color: white !important;
+}
+
+.dec h1::before {
+  content: attr(data);
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 3px double #0e185f;
+  color: #0e185f;
+  animation: slide 5s linear infinite;
+  overflow: hidden;
+}
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.dist {
+  height: 200px !important;
+  width: 400px !important;
+  margin-top: 50px !important;
+  background-position: center !important;
+  border-radius: 5px !important;
+  background-size: 100% 100% !important;
+  border: solid 1px yellow !important;
+}
+.bp {
+  height: 100px !important;
+  width: 150px !important;
+  position: relative !important;
+  top: -60px !important;
+  left: -38px !important;
+  opacity: 0 !important;
+  cursor: pointer !important;
+}
+.dist-pak {
+  height: 200px !important;
+  width: 400px !important;
+  margin-top: 50px !important;
+  background-position: center !important;
+  border-radius: 5px !important;
+  background-size: 100% 100% !important;
+  border: solid 1px rgb(2, 163, 29) !important;
+}
+
+/* ================================ Add Image ================================== */
+.ico-buttn {
+  height: 60px !important;
+  width: 140px !important;
+  margin: 10px !important;
+  padding: 22px 30px !important;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  ) !important;
+  text-align: center !important;
+  font-size: 13px;
+  text-transform: uppercase !important;
+  transition: 0.5s !important;
+  background-size: 200% auto !important;
+  color: white !important;
+  border-radius: 10px !important;
+  display: block !important;
+  border: 0px !important;
+  font-weight: 500 !important;
+  box-shadow: 0px 0px 14px -7px #f09819 !important;
+}
+
+.ico-buttn:hover {
+  background-position: right center !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.ico-buttn:active {
+  transform: scale(0.95) !important;
+}
+
+/* ================================================================================= */
+.cont-second {
+  height: 100vh !important;
+  width: 100vw !important;
+  background-image: url(../css/pak.jpeg) !important;
+  display: flex !important;
+  background-size: cover !important;
+  align-items: center !important;
+  font-family: "Courier New" !important;
+}
+.ico-buttn-second {
+  height: 60px !important;
+  width: 140px !important;
+  margin: 10px !important;
+  padding: 22px 30px !important;
+  background-image: linear-gradient(
+    45deg,
+    #fff 0%,
+    rgb(6, 184, 6) 50%,
+    #00a000 100%
+  ) !important;
+  text-align: center !important;
+  font-size: 13px;
+  text-transform: uppercase !important;
+  transition: 0.5s !important;
+  background-size: 200% auto !important;
+  color: white !important;
+  border-radius: 10px !important;
+  display: block !important;
+  border: 0px !important;
+  font-weight: 500 !important;
+  box-shadow: 0px 0px 14px -7px green !important;
+}
+
+.ico-buttn-second:hover {
+  background-position: right center !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.ico-buttn-second:active {
+  transform: scale(0.95) !important;
+}
+
+/* ================================== Media Quries================================ */
+@media only screen and (max-width: 995px) {
+  .shed {
+    height: 120vh;
+  }
+  .justify-content-center {
+    width: 80vw;
+    position: relative;
+    top: -30px;
+  }
+  .service-info {
+    position: relative !important;
+    top: -140px !important;
+  }
+  #services {
+    height: 120vh !important;
+  }
+  .cont {
+    height: 120vh !important;
+  }
+  .dec {
+    justify-content: space-around !important;
+  }
+  .cont-second {
+    height: 120vh !important;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .shed {
+    height: 170vh !important;
+  }
+  #about {
+    width: 100px !important;
+    position: relative !important;
+    left: 6vw !important;
+  }
+  .align-items-stretch {
+    justify-content: center !important;
+  }
+  #services {
+    height: 190vh !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .dist {
+    height: 200px !important;
+    width: 300px !important;
+  }
+  .dist-pak {
+    height: 200px !important;
+    width: 300px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .dist {
+    width: 90vw !important;
+  }
+  .dist-pak {
+    width: 90vw !important;
+  }
+  .head-logo {
+    height: 100px !important;
+    width: 100% !important;
+  }
+}
